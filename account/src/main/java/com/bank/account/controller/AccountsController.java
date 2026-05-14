@@ -14,7 +14,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -24,11 +26,23 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Validated
 @RequestMapping(path="/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@AllArgsConstructor
+
 @Tag(name="CRUD Operations controller",
 description ="Manages create, fetch , update and delete account")
 public class AccountsController {
-    private IAccountsService iAccountsService;
+
+    private final IAccountsService iAccountsService;
+
+    @Value("${build.version}")
+    private String buildVersion;
+    @Autowired
+    private Environment environment;
+
+    public AccountsController(IAccountsService iAccountsService) {
+        this.iAccountsService = iAccountsService;
+    }
+
+
     @Operation(summary="Create Account Rest API",
     description = "REST API to create a new account")
     @ApiResponse(responseCode = "201",
@@ -91,5 +105,26 @@ public class AccountsController {
         if(isDeleted)
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO(AccountConstants.STATUS_200,AccountConstants.MESSAGE_200));
         else return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseDTO(AccountConstants.STATUS_417,AccountConstants.MESSAGE_417_DELETE));
+    }
+    @Operation(summary="Get Build Info of Rest API",
+            description = "REST API to fetch build information of the application")
+    @ApiResponse(responseCode = "200",
+            description = "HTTP Status OK")
+    @GetMapping("/build-info")
+    public ResponseEntity<String> getBuildInfo()
+    {
+        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+    }
+
+    @Operation(summary="Get Java Version",
+            description = "REST API to fetch Java Version")
+    @ApiResponse(responseCode = "200",
+            description = "HTTP Status OK")
+    @GetMapping("/maven-version")
+    public ResponseEntity<String> getMavenVersion()
+    {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(environment.getProperty("MAVEN_HOME"));
     }
 }
