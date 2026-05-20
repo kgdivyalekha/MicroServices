@@ -14,3 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application-qa.yml"
+      - "application-prod.yml"
+  profiles:
+    active:
+      - "qa"
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Loans Management Dev Team"
+  contactDetails:
+    name: "Lekha Gunasekaran"
+    email: "lekha@bank.com"
+  onCallSupport:
+    - (787) 787-7878
+    - (787) 878-8787
+
