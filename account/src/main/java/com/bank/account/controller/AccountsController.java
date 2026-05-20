@@ -3,6 +3,7 @@ package com.bank.account.controller;
 
 import com.bank.account.Service.IAccountsService;
 import com.bank.account.constants.AccountConstants;
+import com.bank.account.dto.AccountContactInfoDTO;
 import com.bank.account.dto.CustomerDTO;
 import com.bank.account.dto.ErrorResponseDTO;
 import com.bank.account.dto.ResponseDTO;
@@ -37,6 +38,8 @@ public class AccountsController {
     private String buildVersion;
     @Autowired
     private Environment environment;
+    @Autowired
+    private AccountContactInfoDTO accountContactInfoDTO;
 
     public AccountsController(IAccountsService iAccountsService) {
         this.iAccountsService = iAccountsService;
@@ -116,8 +119,8 @@ public class AccountsController {
         return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
     }
 
-    @Operation(summary="Get Java Version",
-            description = "REST API to fetch Java Version")
+    @Operation(summary="Get Maven Version",
+            description = "REST API to fetch maven Version")
     @ApiResponse(responseCode = "200",
             description = "HTTP Status OK")
     @GetMapping("/maven-version")
@@ -126,5 +129,17 @@ public class AccountsController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(environment.getProperty("MAVEN_HOME"));
+    }
+    @Operation(summary="Get Contact Information",
+            description = "REST API to fetch contact details")
+    @ApiResponse(responseCode = "200",
+            description = "HTTP Status OK")
+
+    @GetMapping("/contact-info")
+    public ResponseEntity<AccountContactInfoDTO> getContactInfo()
+    {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(accountContactInfoDTO);
     }
 }
