@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to Cards Management Section"
+  contactDetails:
+    name: "Lekha Gunasekaran - Developer"
+    email: "lekha@bank.com"
+  onCallSupport:
+    - (939) 939-9393
+    - (939) 393-3939

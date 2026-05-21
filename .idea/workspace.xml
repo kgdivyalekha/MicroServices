@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed843eb4-32fc-4ba0-9faf-71ece8e424e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MicroServices - V2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/bank/cards/dto/CardsContactInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/account.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/bank/loans/dto/LoansContactInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MicroServices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/account-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/account-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bank/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bank/cards/CardsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bank/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bank/cards/controller/CardsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bank/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bank/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bank/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bank/loans/controller/LoansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kgdivyalekha"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kgdivyalekha/MicroServices.git",
+    "accountId": "d00b8050-5b0c-4446-9fb8-7f6144752162"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3E0MGP5NhO2HM2PWFNtXH5SHJLg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AccountApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Lekha/SpringProjects/MicroServices - V2/configserver/src/main/resources/config",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Lekha\SpringProjects\MicroServices - V2\configserver\src\main\resources\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bank.loans.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LoansApplication">
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="account" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.account.AccountApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="cards" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.cards.CardsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.configserver.ConfigserverApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.loans.LoansApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.loans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CardsApplication" />
+      <item itemvalue="Spring Boot.ConfigserverApplication" />
+      <item itemvalue="Spring Boot.LoansApplication" />
+      <item itemvalue="Spring Boot.AccountApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LoansApplication" />
+        <item itemvalue="Spring Boot.CardsApplication" />
+        <item itemvalue="Spring Boot.AccountApplication" />
+        <item itemvalue="Spring Boot.ConfigserverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed843eb4-32fc-4ba0-9faf-71ece8e424e6" name="Changes" comment="" />
+      <created>1779310936465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779310936465</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

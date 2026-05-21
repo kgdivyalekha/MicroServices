@@ -1,6 +1,10 @@
 server:
   port: 8080
 spring:
+  application:
+    name: "account"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -15,19 +19,4 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import:
-      - "application-qa.yml"
-      - "application-prod.yml"
-  profiles:
-    active:
-      - "qa"
-build:
-  version: "3.0"
-account:
-  message: "Welcome to Bank API Services"
-  contactDetails:
-    name: "Lekha Gunasekaran - Developer"
-    email: "lekha@bank.com"
-  onCallSupport:
-    -(909) 909-9090
-    -(909) 909-9099
+    import: "optional:configserver:http://localhost:8071/"
