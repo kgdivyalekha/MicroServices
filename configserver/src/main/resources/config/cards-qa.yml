@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to Cards Management Section"
+  contactDetails:
+    name: "Lekha Gunasekaran - QA Lead (Cards)"
+    email: "lekha@bank.com"
+  onCallSupport:
+    - (919) 909-9090
+    - (919) 919-9190

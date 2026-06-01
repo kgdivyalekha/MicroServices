@@ -1,0 +1,10 @@
+build:
+  version: "1.0"
+account:
+  message: "Welcome to Bank API Services"
+  contactDetails:
+    name: "Lekha Gunasekaran - Product Owner"
+    email: "lekha@bank.com"
+  onCallSupport:
+    -(989) 909-9090
+    -(989) 909-9099

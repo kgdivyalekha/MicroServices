@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Loans Management Dev Team"
+  contactDetails:
+    name: "Lekha Gunasekaran"
+    email: "lekha@bank.com"
+  onCallSupport:
+    - (787) 787-7878
+    - (787) 878-8787
+

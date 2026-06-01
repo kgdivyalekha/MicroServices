@@ -1,0 +1,12 @@
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to Loans QA Team"
+  contactDetails:
+    name: "Lekha Gunasekaran"
+    email: "lekha@bank.com"
+  onCallSupport:
+    - (606) 606-6060
+    - (606) 060-0606
+
