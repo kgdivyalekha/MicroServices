@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Cards extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cardID;
+    private Long cardId;
     private String mobileNumber;
     private String cardNumber;
     private String cardType;

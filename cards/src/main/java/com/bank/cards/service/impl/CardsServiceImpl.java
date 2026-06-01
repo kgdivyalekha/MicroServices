@@ -61,7 +61,7 @@ public class CardsServiceImpl implements ICardsService {
         Cards cards=cardsRepository.findByMobileNumber(mobileNumber).orElseThrow(
                 ()-> new ResourceNotFoundException("Card","Mobile Number",mobileNumber)
         );
-        cardsRepository.deleteById(cards.getCardID());
+        cardsRepository.deleteById(cards.getCardId());
         return true;
     }
 }
