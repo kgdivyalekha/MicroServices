@@ -6,12 +6,10 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-@Schema(
-        name="Customer",
-        description = "Schema to hold customer details"
-)
+
 @Data
-public class CustomerDTO {
+@Schema(name="Account",description = "Schema to hold customer details information")
+public class CustomerDetailsDTO {
     @Schema(
             description = "Name of the customer",
             example = "Avery Bank"
@@ -35,4 +33,9 @@ public class CustomerDTO {
     private String mobileNumber;
     @Schema(description = "Account Details of the Customer")
     private AccountsDTO accountsDTO;
+    @Schema(description = "Loan Details of the Customer")
+    private LoansDTO loansDTO;
+    @Schema(description = "Card Details of the Customer")
+    private CardsDTO cardsDTO;
+
 }
