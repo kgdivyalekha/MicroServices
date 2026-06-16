@@ -7,6 +7,8 @@ import com.bank.account.dto.AccountContactInfoDTO;
 import com.bank.account.dto.CustomerDTO;
 import com.bank.account.dto.ErrorResponseDTO;
 import com.bank.account.dto.ResponseDTO;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,6 +17,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -33,6 +37,7 @@ description ="Manages create, fetch , update and delete account")
 public class AccountsController {
 
     private final IAccountsService iAccountsService;
+    private static final Logger logger= LoggerFactory.getLogger(AccountsController.class);
 
     @Value("${build.version}")
     private String buildVersion;
@@ -113,22 +118,36 @@ public class AccountsController {
             description = "REST API to fetch build information of the application")
     @ApiResponse(responseCode = "200",
             description = "HTTP Status OK")
+    @Retry(name="getBuildInfo", fallbackMethod = "getBuildInfoGallBack")
     @GetMapping("/build-info")
     public ResponseEntity<String> getBuildInfo()
     {
+        logger.debug("getBuildInfo() method invoked");
         return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
     }
-
-    @Operation(summary="Get Maven Version",
+    public ResponseEntity<String> getBuildInfoFallBack(Throwable throwable)
+    {
+        logger.debug("getBuildInfoFallBack() method invoked");
+        return ResponseEntity.status(HttpStatus.OK).body("0.9");
+    }
+        @Operation(summary="Get Maven Version",
             description = "REST API to fetch maven Version")
     @ApiResponse(responseCode = "200",
             description = "HTTP Status OK")
+        @RateLimiter(name="mavenVeresion", fallbackMethod= "getMavenVersionFallback")
     @GetMapping("/maven-version")
     public ResponseEntity<String> getMavenVersion()
     {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(environment.getProperty("MAVEN_HOME"));
+    }
+
+    public ResponseEntity<String> getMavenVersionFallback(Throwable throwable)
+    {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Java 17.0");
     }
     @Operation(summary="Get Contact Information",
             description = "REST API to fetch contact details")
