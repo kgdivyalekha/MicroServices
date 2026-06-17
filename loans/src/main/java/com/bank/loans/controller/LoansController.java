@@ -15,6 +15,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -33,6 +35,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Validated
 public class LoansController {
+    private static final Logger logger= LoggerFactory.getLogger(LoansController .class);
     private ILoansService iLoansService;
     @Value("${build.version}")
     private String buildVersion;
@@ -79,10 +82,12 @@ public class LoansController {
             content = @Content(schema=@Schema(implementation = ErrorResponseDTO.class)))
     })
     @GetMapping("/fetch")
-    public ResponseEntity<LoansDTO> fetchLoanDetails(@RequestParam
+    public ResponseEntity<LoansDTO> fetchLoanDetails(@RequestHeader("bank-correlation-id") String correlationId,@RequestParam
                                                      @Pattern(regexp="($|[0-9]{10})",message = "Mobile Number must be 10 digits") String mobileNumber)
     {
+        logger.debug("fetchLoanDetails method start");
         LoansDTO loansDTO=iLoansService.fetchLoan(mobileNumber);
+        logger.debug("fetchLoanDetails method end");
         return ResponseEntity.status(HttpStatus.OK).body(loansDTO);
     }
     @Operation(
@@ -167,6 +172,7 @@ public class LoansController {
     @GetMapping("/contact-info")
     public ResponseEntity<LoansContactInfoDTO> getContactInfo()
     {
+        logger.debug("Invoked Loans ContactInfo API");
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(loansContactInfoDTO);

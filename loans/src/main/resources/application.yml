@@ -30,9 +30,20 @@ management:
   endpoint:
     shutdown:
       access: unrestricted
+    health:
+      probes:
+        enabled: true
   info:
     env:
       enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 eureka:
   instance:
@@ -48,3 +59,8 @@ info:
     name: "loans"
     description: "Bank Loans Management Application"
     version: "1.0.0"
+logging:
+  level:
+    com:
+      bank:
+        loans: DEBUG
