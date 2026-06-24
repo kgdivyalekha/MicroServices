@@ -4,70 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d0e53a2-13e0-4454-9970-b13c2b33defc" name="Changes" comment="Observability and Monitoring">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.heal/mrf/list.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/config/config.json/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/format.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/pool.bin/xl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/tmp/13852387-535f-4858-a456-2b04e4d86a4d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/bank/eurekaserver/EurekaserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/bank/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/bank/gatewayserver/GatewayserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/test/java/com/bank/gatewayserver/GatewayserverApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+    <list default="true" id="68c75120-c470-4995-83e8-c4ae99fa7d3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Microservices-V8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/bank/gatewayserver/config/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/bank/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Microservices - V7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.bloomcycle.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin.bkp/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage.json/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin.bkp/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/tmp/13852387-535f-4858-a456-2b04e4d86a4d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="V6" />
+        <entry key="$PROJECT_DIR$" value="V7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kgdivyalekha"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kgdivyalekha&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kgdivyalekha/MicroServices.git",
-    "accountId": "d00b8050-5b0c-4446-9fb8-7f6144752162"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kgdivyalekha/MicroServices.git&quot;,
+    &quot;accountId&quot;: &quot;d00b8050-5b0c-4446-9fb8-7f6144752162&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -75,42 +72,35 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5,
-  "fromUser": false
-}]]></component>
-  <component name="ProjectId" id="3FDvzMOfx1RrpIIfCOA2Es6MJwY" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FKBNw9A1efnlkFU4IFb43LqqgY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AccountApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Run",
-    "Spring Boot.ConfigserverApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.GatewayserverApplication.executor": "Run",
-    "Spring Boot.LoansApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "V7",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Lekha/SpringProjects/Microservices - V7/docker-compose/qa",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;V8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Lekha/SpringProjects/Microservices-V8&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Lekha\SpringProjects\Microservices - V7\docker-compose\qa" />
-      <recent name="C:\Lekha\SpringProjects\Microservices - V7\docker-compose\default" />
-      <recent name="C:\Lekha\SpringProjects\Microservices - V7\docker-compose\prod" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager" selected="Spring Boot.GatewayserverApplication">
     <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
@@ -184,39 +174,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayserverApplication" />
         <item itemvalue="Spring Boot.CardsApplication" />
         <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.AccountApplication" />
+        <item itemvalue="Spring Boot.GatewayserverApplication" />
         <item itemvalue="Spring Boot.EurekaserverApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d0e53a2-13e0-4454-9970-b13c2b33defc" name="Changes" comment="" />
-      <created>1781622716162</created>
+      <changelist id="68c75120-c470-4995-83e8-c4ae99fa7d3a" name="Changes" comment="" />
+      <created>1781813844522</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1781622716162</updated>
+      <updated>1781813844522</updated>
     </task>
-    <task id="LOCAL-00001" summary="Observability and Monitoring">
-      <option name="closed" value="true" />
-      <created>1781728249620</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1781728249620</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Observibility and Monitoring" />
-    <MESSAGE value="Observability and Monitoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Observability and Monitoring" />
   </component>
 </project>

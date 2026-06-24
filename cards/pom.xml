@@ -183,7 +183,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>lekhagunasekaran/${project.artifactId}:v7</image>
+						<image>lekhagunasekaran/${project.artifactId}:v8</image>
 					</to>
 				</configuration>
 			</plugin>
