@@ -227,7 +227,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "lekhagunasekaran/configserver:v7"
+    image: "lekhagunasekaran/configserver:v9"
     container_name: ConfigServer-MS
     ports:
       - "8071:8071"
@@ -245,7 +245,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "lekhagunasekaran/eurekaserver:v7"
+    image: "lekhagunasekaran/eurekaserver:v9"
     container_name: EurekaServer-MS
     ports:
       - "8070:8070"
@@ -267,7 +267,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   account:
-    image: "lekhagunasekaran/account:v7"
+    image: "lekhagunasekaran/account:v9"
     container_name: Account-MS
     ports:
       - "8080:8080"
@@ -287,7 +287,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "lekhagunasekaran/loans:v7"
+    image: "lekhagunasekaran/loans:v9"
     container_name: Loans-MS
     ports:
       - "8090:8090"
@@ -307,7 +307,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "lekhagunasekaran/cards:v7"
+    image: "lekhagunasekaran/cards:v9"
     container_name: Cards-MS
     ports:
       - "9000:9000"
@@ -326,7 +326,7 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
   gatewayserver:
-    image: "lekhagunasekaran/gatewayserver:v7"
+    image: "lekhagunasekaran/gatewayserver:v9"
     container_name: GatewayServer-MS
     ports:
       - "8072:8072"

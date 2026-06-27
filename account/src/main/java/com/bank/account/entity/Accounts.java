@@ -1,9 +1,6 @@
 package com.bank.account.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -14,4 +11,6 @@ public class Accounts extends BaseEntity{
     private Long customerId;
     private String accountType;
     private String branchAddress;
+    @Column(name="communication_sw")
+    private Boolean communicationSw;
 }
