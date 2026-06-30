@@ -1,16 +1,33 @@
 services:
-  rabbit:
-    image: rabbitmq:3.12-management
-    hostname: rabbitmq
+  kafka:
+    image: apache/kafka:4.3.1
+    hostname: kafka
+    container_name: kafka
     ports:
-      - "5672:5672"
-      - "15672:15672"
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_NODE_ID: 1
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:29093
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,CONTROLLER://kafka:29093,PLAINTEXT_HOST://0.0.0.0:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
+      CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
     healthcheck:
-      test: rabbitmq-diagnostics check_port_availability
+      test: ["CMD-SHELL","nc -z kafka 9092 || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 10
       start_period: 5s
+
     extends:
       file: common-config.yml
       service: network-deploy-service
@@ -242,7 +259,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "lekhagunasekaran/configserver:v9"
+    image: "lekhagunasekaran/configserver:v10"
     container_name: ConfigServer-MS
     ports:
       - "8071:8071"
@@ -260,7 +277,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "lekhagunasekaran/eurekaserver:v9"
+    image: "lekhagunasekaran/eurekaserver:v10"
     container_name: EurekaServer-MS
     ports:
       - "8070:8070"
@@ -282,7 +299,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   account:
-    image: "lekhagunasekaran/account:v9"
+    image: "lekhagunasekaran/account:v10"
     container_name: Account-MS
     ports:
       - "8080:8080"
@@ -294,18 +311,18 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
-      rabbit:
+      kafka:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "account"
       OTEL_SERVICE_NAME: "account"
-      SPRING_RABBITMQ_HOST: "rabbit"
+      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   loans:
-    image: "lekhagunasekaran/loans:v9"
+    image: "lekhagunasekaran/loans:v10"
     container_name: Loans-MS
     ports:
       - "8090:8090"
@@ -325,7 +342,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "lekhagunasekaran/cards:v9"
+    image: "lekhagunasekaran/cards:v10"
     container_name: Cards-MS
     ports:
       - "9000:9000"
@@ -344,7 +361,7 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
   gatewayserver:
-    image: "lekhagunasekaran/gatewayserver:v9"
+    image: "lekhagunasekaran/gatewayserver:v10"
     container_name: GatewayServer-MS
     ports:
       - "8072:8072"
@@ -365,13 +382,13 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
   message:
-    image: "lekhagunasekaran/message:v9"
+    image: "lekhagunasekaran/message:v10"
     container_name: Message-MS
     depends_on:
-      rabbit:
+      kafka:
         condition: service_healthy
     environment:
-      SPRING_RABBITMQ_HOST: "rabbit"
+      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
     extends:
       file: common-config.yml
       service: network-deploy-service

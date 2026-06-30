@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8578432b-539c-4c00-8890-620492d6f826" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Microservices-V9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/dto/AccountMsgDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/functions/AccountFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/bank/message/dto/AccountMessageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/bank/message/functions/MessageFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Microservices-V8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="556c5166-9cd7-4fd2-b2fc-01b703460fec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Microservices-V10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Microservices-V9.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/Service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/Service/IAccountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/Service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/Service/impl/AccountsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/bank/account/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/bank/account/entity/Accounts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
@@ -33,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-data/.usage-cache.bin/xl.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin.bkp/xl.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/buckets/loki-ruler/.usage-cache.bin/xl.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/.data/minio/.minio.sys/tmp/b5b9fe34-f85f-4018-9ef9-8f8579258cb0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
@@ -45,18 +33,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Record" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="V8" />
+        <entry key="$PROJECT_DIR$" value="V9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,10 +61,10 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7,
+  &quot;associatedIndex&quot;: 8,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3FauwY1bOF1t5lKOLdXeDQAx3n9" />
+  <component name="ProjectId" id="3FjF7nLkEFnzxIY3nQKdPMRrONR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,10 +82,11 @@
     "Spring Boot.GatewayserverApplication.executor": "Run",
     "Spring Boot.MessageApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "V9",
+    "git-widget-placeholder": "V10",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Lekha/SpringProjects/Microservices-V9",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+    "last_opened_file_path": "C:/Lekha/SpringProjects/Microservices-V10",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.GatewayserverApplication">
@@ -189,13 +170,21 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8578432b-539c-4c00-8890-620492d6f826" name="Changes" comment="" />
-      <created>1782325740083</created>
+      <changelist id="556c5166-9cd7-4fd2-b2fc-01b703460fec" name="Changes" comment="" />
+      <created>1782580407266</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1782325740083</updated>
+      <updated>1782580407266</updated>
     </task>
     <servers />
   </component>
